@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+
+body {
+    font-family: 'Open Sans', sans-serif, helvetica, Arial;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    /* body background image */
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.541), rgba(204, 0, 255, 0.637)), url(image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+     
+   }
+
+   .update .title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+   
+
+   .update_form{
+    font-weight: bold;
+    font-size: 16px;
+    max-width: 500px;
+    width: 75%;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+   }
+   
+ 
+
+

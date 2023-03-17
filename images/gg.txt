@@ -1,0 +1,199 @@
+  <div class="mainform">
+            <div class="title">
+                REGISTRATION FORM
+            </div>
+            <div class="form">
+                <div class="input_field">
+                    <label>Name </label>
+                    <input type="text" class="input">
+
+                </div>
+               
+                <div class="input_field">
+                    <label>Father's Name </label>
+                    <input type="text" class="input">
+
+                </div>
+
+                <div class="input_field">
+                    <label> Mother's Name </label>
+                    <input type="text" class="input">
+
+                </div>
+                
+                <div class="input_field">
+                    <label> Email </label>
+                    <input type="text" class="input">
+
+                </div>
+
+                
+                <div class="input_field">
+                    <label> Gender</label>
+                    <select name="gender" class="selectbox" required>
+                        
+                        <option value="">SELECT</option>
+            <option value="Male">MALE</option>
+            <option value="Female">FEMALE</option>
+            <option value="Others">OTHERS</option>
+            
+                            <!-- <option value="BCA">BCA</option>
+                            <option value="B.COM">B.COM</option>
+                            <option value="B.SC">B.SC</option>
+                            <option value="B.A">B.A</option>
+                            <option value="BBA">BBA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                            <option value="M.COM">M.COM</option>
+                            <option value="MA">MA</option>
+                             -->
+
+                    </select>
+
+                </div> 
+                <div class="input_field">
+                    <label>State </label>
+                    <input type="text" class="input">
+
+                </div>
+                <div class="input_field">
+                    <label> District </label>
+                    <input type="text" class="input">
+
+                </div>
+                <div class="input_field">
+                    <label> Address </label>
+                   <textarea class="textarea"></textarea>
+
+                </div>
+
+                <div class="input_field">
+                    <label>Academic Qualification</label>
+            <input type="radio" name=qualification  value="HighSchool" required><label>HighSchool</label>
+            <input type="radio" name=qualification value="HigherSchool" required><label>HigherSchool</label>
+            <input type="radio" name=qualification value="Graduation" required><label>Graduation(Bachelor)</label>
+                </div>
+
+                <div class="input_field">
+                    <label>Name of the School/College </label>
+                    <input type="text" name="institute" class="input" required>
+                  
+                </div>
+
+                <div class="input_field">
+                
+                <label>
+                Percentage</label>
+                 <input type="text" name="percent" class="input" required>
+    
+            </div>
+
+            <div class="input_field"> 
+            <input type="submit" name="submit" value="SUBMIT" class="btn"><br>
+</div>
+
+
+llll
+
+
+ <center> Name: 
+       <input type="text" name="name" value="<?php echo $record['name'];?>"><br><br></center> 
+       <center> Father's Name: 
+        <input type="text" name="fname" required value="<?php echo $record['fname'];?>"><br><br></center> 
+    
+        <center> Mother's Name: 
+        <input type="text" name="mname" required value="<?php echo $record['mname'];?>"><br><br></center> 
+        <center> Email: 
+         <input type="email" name="email" required value="<?php echo $record['email'];?>"><br><br></center> 
+       
+
+      
+
+        <label>Gender</label>
+        <br>
+        <select name="gender" required value="<?php echo $record['email'];?>">
+        <option value="">SELECT</option>
+
+            <option value="Male"
+                <?php 
+                if($record['gender'] == 'Male')
+                {
+                    echo "selected";
+                }
+                ?>
+            >
+                MALE</option>
+            <option value="Female"<?php 
+                if($record['gender'] == 'Female')
+                {
+                    echo "selected";
+                }
+                ?>
+                >
+                FEMALE</option>
+            <option value="Others"<?php 
+                if($record['gender'] == 'Others')
+                {
+                    echo "selected";
+                }
+                ?>>
+                
+            OTHERS</option>
+            
+
+        </select>
+        <br><br>
+
+        State: 
+        <br><input type="text" name="state" required value="<?php echo $record['state'];?>"><br><br>
+
+       <br> District: <input type="text" name="district" required value="<?php echo $record['district'];?>"><br><br>
+
+        
+        Address: <br> <textarea name="address" required>
+        <?php echo $record['address'];?></textarea><br> <br>
+        
+
+        Academic Qualification: 
+        
+            <input type="radio" name=qualification  value="HighSchool" required
+
+            <?php 
+                if($record['qualification'] == "HighSchool")
+                {
+                    echo "checked";
+                }
+                ?>
+            >
+            <label>HighSchool</label>
+            <input type="radio" name=qualification value="HigherSchool" required
+            <?php 
+                if($record['qualification'] == "HigherSchool")
+                {
+                    echo "checked";
+                }
+                ?>
+            >
+            <label>HigherSchool</label>
+            <input type="radio" name=qualification value="Graduation" required
+            <?php 
+                if($record['qualification'] == "Graduation")
+                {
+                    echo "checked";
+                }
+                ?>
+            >
+            <label>Graduation(Bachelor)</label>
+     
+
+       <br><br> Name of the School/College (last attended)<br>:  <input type="text" name="institute" required value="<?php echo $record['institute'];?>">
+
+       <br><br> Percentage: <input type="text" name="percent" required value="<?php echo $record['percent'];?>">
+
+      
+        
+        
+        
+
+
+

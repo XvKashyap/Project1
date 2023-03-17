@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+
+body {
+    font-family: 'Open Sans', sans-serif, helvetica, Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    /* body background image */
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.541), rgba(204, 0, 255, 0.637)), url(image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+     
+   }
+
+   .mainform{
+    
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+   }
+   .form {
+    background-color: rgba(220, 255, 66, 0.7);
+    padding: 20px;
+    margin: 50px 0;
+   }
+.mainform .title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.mainform .form{
+    width: 103%;
+
+}
+.mainform .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.mainform .form .input_field label{
+    
+    width: 200px;
+    margin-right: 5px;
+    font-weight: bold;
+    
+    
+}
+.mainform .form .input_field .input,
+.mainform .form .input_field .textarea{
+
+    border: 1px solid #D071F9;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+.mainform .form .input_field .textarea{
+    resize: none;
+    height: 80px;
+}
+.mainform .form .input_field .selectbox{
+    position: relative;
+    width: 53%;
+    height: 35px;
+    border: 1px solid #D071F9;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    outline: none;
+}
+.mainform .form .input_field .input:focus,
+.mainform .form .input_field .textarea:focus{
+    border: 2px solid purple;
+}
+
+.mainform .form .input_field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #D071F9;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.mainform .form .input_field:last-child{
+    margin-bottom: 0;
+}
+.mainform .form .input_field .btn:hover{
+    background: purple;
+}
+/* mobile responsive mode */
+@media  (max-width: 580px)  {
+    .mainform .form .input_field {
+     flex-direction: column;
+    }
+    .mainform .form .input_field label {
+     margin-bottom: 5px;
+     width: 90% !important;
+    }
+    
+}
+
+.update,.delete{
+    background-color:green;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    height: 22px;
+    width: 80px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.delete{
+    background-color:red;
+    
+}
